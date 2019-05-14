@@ -32,7 +32,7 @@ def showEnviron():
         result['error'] = False
 
     except Exception as e:
-        result['altitude'] = e.message
+        print(e)
 
     return jsonify(result)
 
